@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
 :root {
   --color-primary: #3FE198;
   --color-primary-dark: #1B945D;
@@ -6,20 +11,17 @@
   --color-text-green: #07403F;
   --color-text: #333;
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 body {
   color: var(--color-text);
 }
-
+*/
