@@ -1,20 +1,34 @@
 import Image from 'next/image';
 import logo from '@/public/logo.svg';
 import Link from 'next/link';
+import frFlag from '@/public/fr.svg';
 import gbFlag from '@/public/gb.svg';
 import Cta from './Cta';
+import { useRouter } from 'next/router';
 
 export default function Header() {
+  const router = useRouter();
+  const { pathname, asPath, query } = router;
+  const flags = {
+    fr: frFlag,
+    en: gbFlag
+  }
+  const title = {
+    fr: 'Version française',
+    en: 'English version'
+  }
+  const nextLocale = router.locale === 'fr' ? 'en' : 'fr';
+
   return (
     <header className='container mx-auto px-5'>
       <div className='flex justify-between py-5'>
         <Link href='/'>
-          <Image src={logo} alt='Pierre Andreski' />
+          <Image src={logo} alt='Logo' className='w-8 md:w-11' />
         </Link>
         <div className='flex items-center'>
-          <Link href='/' className='mr-4 md:mr-8'>
-            <Image src={gbFlag} alt='English version' className='rounded-full w-6' />
-          </Link>
+          <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
+            <Image src={flags[nextLocale]} alt='' title={title[nextLocale]} className='rounded-full w-6' />
+          </div>
           <Cta href='/'>Voir mon CV</Cta>
         </div>
       </div>

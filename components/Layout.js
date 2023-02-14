@@ -30,7 +30,7 @@ function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <div className={`${openSans.variable} ${dmSerifDisplay.variable} font-sans box-border`}>
+      <div className={`${openSans.variable} ${dmSerifDisplay.variable} font-sans box-border text-deep-gray`}>
         <Header />
         {children}
       </div>
