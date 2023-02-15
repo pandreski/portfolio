@@ -22,6 +22,7 @@ function Hero() {
     setImageAlt(data.imageAlt);
   }, [data]);
 
+  // TODO: add loading skeleton
   if (isLoading) {
     return (
       <p>LOADING</p>

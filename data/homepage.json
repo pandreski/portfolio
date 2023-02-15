@@ -23,8 +23,105 @@
       "en": "Hi, I'm Pierre..."
     },
     "body": {
-      "fr": "Développeur depuis plus de 8 ans maintenant, j’ai principalement fait mes armes dans des agences de communication en France et au Luxembourg.\n\n’ai débuté ma carrière en développant des sites web pour des clients de toutes tailles en leur proposant des solutions WordPress et Drupal. Longtemps soucieux de maîtriser tous les aspects du métier, je suis à l’aise aussi bien en back-end (PHP) qu’en front-end (JavaScript, CSS/Sass).\n\nToutefois, j’ai récemment fait le pari de me focaliser sur l’aspect front-end tout en me spécialisant dans la maîtrise de React JS. Et bientôt, j’aurai à coeur d’utiliser Node JS pour le back-end (sans rancune PHP 💙).",
+      "fr": "Développeur depuis plus de 8 ans maintenant, j’ai principalement fait mes armes dans des agences de communication en France et au Luxembourg.\n\nJ’ai débuté ma carrière en développant des sites web pour des clients de toutes tailles en leur proposant des solutions WordPress et Drupal. Longtemps soucieux de maîtriser tous les aspects du métier, je suis à l’aise aussi bien en back-end (PHP) qu’en front-end (JavaScript, CSS/Sass).\n\nToutefois, j’ai récemment fait le pari de me focaliser sur l’aspect front-end tout en me spécialisant dans la maîtrise de React JS. Et bientôt, j’aurai à coeur d’utiliser Node JS pour le back-end (sans rancune PHP 💙).",
       "en": "Developer for more than 8 years now, I mainly worked in communication agencies in France and Luxembourg.\n\nI started my career by developing websites for clients of all sizes with WordPress and Drupal solutions. For a long time, I have been trying to perform all the aspects of the job. I am comfortable with both back-end (PHP) and front-end (JavaScript, CSS/Sass) parts.\n\nHowever, I recently decided to focus on the front-end aspect while specializing in React JS. And soon, I'd like to use Node JS for the back-end (no hard feelings PHP 💙)."
     }
-  }
+  },
+  "knowledge": [
+    {
+      "desktopOrder": 2,
+      "title": {
+        "fr": "Stack \"Front\"",
+        "en": "\"Front\" stack"
+      },
+      "subtitle": {
+        "fr": "Le nerf de la guerre",
+        "en": "The crux"
+      },
+      "items": {
+        "fr": [
+          "JavaScript (ES6+)",
+          "React JS",
+          "Next JS",
+          "Gatsby",
+          "Sass, Styled Components",
+          "Atomic, BEM"
+        ],
+        "en": [
+          "JavaScript (ES6+)",
+          "React JS",
+          "Next JS",
+          "Gatsby",
+          "Sass, Styled Components",
+          "Atomic, BEM"
+        ]
+      }
+    },
+    {
+      "desktopOrder": 1,
+      "title": {
+        "fr": "Outils",
+        "en": "Tools"
+      },
+      "subtitle": {
+        "fr": "Parce qu'avec eux, c'est quand même plus simple",
+        "en": "Because it's easier with them"
+      },
+      "items": {
+        "fr": [
+          "Vite JS",
+          "Strapi",
+          "Jest, Vitest",
+          "Testing Library",
+          "Nightwatch",
+          "Material UI",
+          "Bootstrap",
+          "Tailwind CSS",
+          "Redux Toolkit"
+        ],
+        "en": [
+          "Vite JS",
+          "Strapi",
+          "Jest, Vitest",
+          "Testing Library",
+          "Nightwatch",
+          "Material UI",
+          "Bootstrap",
+          "Tailwind CSS",
+          "Redux Toolkit"
+        ]
+      }
+    },
+    {
+      "desktopOrder": 3,
+      "title": {
+        "fr": "Tout le reste",
+        "en": "All the rest"
+      },
+      "subtitle": {
+        "fr": "Last but not least",
+        "en": "Last but not least"
+      },
+      "items": {
+        "fr": [
+          "Adobe : PS / AI / ID",
+          "Figma, Sketch",
+          "Drupal",
+          "WordPress",
+          "Docker, Docksal, Lando",
+          "Github, Gitlab",
+          "Jira, Asana, Clickup"
+        ],
+        "en": [
+          "Adobe : PS / AI / ID",
+          "Figma, Sketch",
+          "Drupal",
+          "WordPress",
+          "Docker, Docksal, Lando",
+          "Github, Gitlab",
+          "Jira, Asana, Clickup"
+        ]
+      }
+    }
+  ]
 }

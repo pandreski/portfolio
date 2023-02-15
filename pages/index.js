@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Hero from '@/components/homepage/Hero';
 import Introduction from '@/components/homepage/Introduction';
+import Knowledge from '@/components/homepage/Knowledge';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <Introduction />
+        <Knowledge />
       </main>
     </>
   )

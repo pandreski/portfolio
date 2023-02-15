@@ -5,9 +5,15 @@ import frFlag from '@/public/fr.svg';
 import gbFlag from '@/public/gb.svg';
 import Cta from './Cta';
 import { useRouter } from 'next/router';
+import useSWR from 'swr';
+import { fetcher } from '@/utils/fetcher';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
+  const { data } = useSWR('/api/global', fetcher);
+  const [ctaLabel, setCtaLabel] = useState(null);
   const router = useRouter();
+  const locale = router.locale;
   const { pathname, asPath, query } = router;
   const flags = {
     fr: frFlag,
@@ -17,7 +23,12 @@ export default function Header() {
     fr: 'Version française',
     en: 'English version'
   }
-  const nextLocale = router.locale === 'fr' ? 'en' : 'fr';
+  const nextLocale = locale === 'fr' ? 'en' : 'fr';
+
+  useEffect(() => {
+    if (!data) return;
+    setCtaLabel(data.header.cta);
+  }, [data]);
 
   return (
     <header className='container mx-auto px-5'>
@@ -29,7 +40,7 @@ export default function Header() {
           <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
             <Image src={flags[nextLocale]} alt='' title={title[nextLocale]} className='rounded-full w-6' />
           </div>
-          <Cta href='/'>Voir mon CV</Cta>
+          {ctaLabel && <Cta href='/'>{ctaLabel[locale]}</Cta>}
         </div>
       </div>
     </header>
