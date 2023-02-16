@@ -2,34 +2,14 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 function Cta({ children, theme, ...other }) {
-  const globalStyle = [
-    'hover:text-white',
-    'border-2',
-    'rounded-full',
-    'px-5',
-    'py-1.5',
-    'bg-white/0',
-    'transition-all',
-    'duration-300',
-  ];
-
-  const primaryStyle = [
-    ...globalStyle,
-    `border-primary`,
-    `text-primary`,
-    `hover:bg-primary`,
-  ];
-
-  const secondaryStyle = [
-    ...globalStyle,
-    `border-secondary`,
-    `text-secondary`,
-    `hover:bg-secondary`,
-  ];
+  const styles = {
+    primary: 'border-primary text-primary hover:bg-primary',
+    secondary: 'border-secondary text-secondary hover:bg-secondary'
+  };
 
   return (
     <Link
-      className={theme === 'primary' ? primaryStyle.join(' ') : secondaryStyle.join(' ')}
+      className={`${styles[theme]} hover:text-white border-2 rounded-full px-5 py-1.5 bg-white/0 transition-all duration-300`}
       {...other}
     >
       {children}
@@ -39,7 +19,7 @@ function Cta({ children, theme, ...other }) {
 
 Cta.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.string,
+  theme: PropTypes.oneOf(['primary', 'secondary']),
 }
 
 Cta.defaultProps = {

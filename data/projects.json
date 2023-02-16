@@ -1,1 +1,150 @@
-{}
+{
+  "data": [
+    {
+      "slug": "openclassrooms",
+      "title": {
+        "fr": "Openclassrooms",
+        "en": "Openclassrooms"
+      },
+      "author": "Pierre Andreski",
+      "description": {
+        "fr": "Lorem ipsum",
+        "en": "Dolor sit amet"
+      },
+      "tags": [
+        "JavaScript",
+        "React",
+        "Sass",
+        "Styled components",
+        "Jest",
+        "Testing library",
+        "Material UI",
+        "Redux Toolkit",
+        "Redux persist"
+      ],
+      "website": "https://openclassrooms.com/",
+      "cover": "/media/projects/oc-logo.jpg",
+      "images": []
+    },
+    {
+      "slug": "lappart",
+      "title": {
+        "fr": "L'Appart par Pierre Reistroffer",
+        "en": "L'Appart by Pierre Reistroffer"
+      },
+      "clientName": {
+        "fr": "Pierre Reistroffer",
+        "en": "Pierre Reistroffer"
+      },
+      "author": "Pierre Andreski",
+      "work": {
+        "fr": "",
+        "en": ""
+      },
+      "description": {
+        "fr": "",
+        "en": ""
+      },
+      "tags": ["React", "Next JS", "Sass"],
+      "website": "",
+      "cover": "/media/projects/lappart-website.jpg",
+      "images": []
+    },
+    {
+      "slug": "cactus",
+      "title": {
+        "fr": "Supermarchés Cactus",
+        "en": "Cactus supermarkets"
+      },
+      "clientName": {
+        "fr": "Cactus SA",
+        "en": "Cactus SA"
+      },
+      "author": "Nvision",
+      "work": {
+        "fr": "",
+        "en": ""
+      },
+      "description": {
+        "fr": "",
+        "en": ""
+      },
+      "tags": ["Drupal 9", "TypeScript", "Sass", "Swiper JS"],
+      "website": "",
+      "cover": "/media/projects/cactus-website.jpg",
+      "images": []
+    },
+    {
+      "slug": "menuiserie-riche",
+      "title": {
+        "fr": "Menuiserie Riche",
+        "en": "Riche carpentry"
+      },
+      "clientName": {
+        "fr": "Menuiserie Riche",
+        "en": "Menuiserie Riche"
+      },
+      "author": "Nvision",
+      "work": {
+        "fr": "",
+        "en": ""
+      },
+      "description": {
+        "fr": "",
+        "en": ""
+      },
+      "tags": ["Drupal 9", "JavaScript", "Sass", "Swiper JS", "Webpack"],
+      "website": "",
+      "cover": "/media/projects/riche-website.jpg",
+      "images": []
+    },
+    {
+      "slug": "luxtrust",
+      "title": {
+        "fr": "Luxtrust",
+        "en": "Luxtrust"
+      },
+      "clientName": {
+        "fr": "Luxtrust SA",
+        "en": "Luxtrust SA"
+      },
+      "author": "Vanksen",
+      "work": {
+        "fr": "",
+        "en": ""
+      },
+      "description": {
+        "fr": "",
+        "en": ""
+      },
+      "tags": ["Drupal 9", "JavaScript", "Sass", "Swiper JS"],
+      "website": "",
+      "cover": "/media/projects/luxtrust-website.jpg",
+      "images": []
+    },
+    {
+      "slug": "psa-finance-france",
+      "title": {
+        "fr": "PSA Finance France",
+        "en": "PSA Finance France"
+      },
+      "clientName": {
+        "fr": "Groupe PSA",
+        "en": "PSA Group"
+      },
+      "author": "Vanksen",
+      "work": {
+        "fr": "",
+        "en": ""
+      },
+      "description": {
+        "fr": "",
+        "en": ""
+      },
+      "tags": ["Drupal 8", "JavaScript", "jQuery", "Sass", "Gulp"],
+      "website": "",
+      "cover": "/media/projects/psa-finance-france-website.jpg",
+      "images": []
+    }
+  ]
+}

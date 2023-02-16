@@ -123,5 +123,11 @@
         ]
       }
     }
-  ]
+  ],
+  "projects": {
+    "title": {
+      "fr": "Mes derniers projets",
+      "en": "My last projects"
+    }
+  }
 }
