@@ -3,7 +3,6 @@ import { Open_Sans, DM_Serif_Display } from '@next/font/google'
 import Header from './Header';
 
 const openSans = Open_Sans({
-  weight: ['400', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   variable: '--font-open-sans'

@@ -188,5 +188,33 @@
         }
       }
     ]
+  },
+  "testimonials": {
+    "sectionTitle": {
+      "fr": "Recommandations",
+      "en": "Testimonials"
+    },
+    "sectionSubtitle": {
+      "fr": "Les personnes avec qui j'ai collaboré témoignent",
+      "en": "The people I have worked with testify"
+    },
+    "data": [
+      {
+        "name": "Paul Weinsberg",
+        "role": {
+          "fr": "Développeur Full-Stack @ LOR N DEV",
+          "en": "Full-Stack developer @ LOR N DEV"
+        },
+        "body": {
+          "fr": "Pierre est un développeur passionné et investi dans son travail. Développeur spécialisé frontend (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) il dispose également d'une maîtrise parfaite des CMS Drupal/WordPress pour la partie backend, CMS sur lesquels nous travaillions ensemble quotidiennement. Humble et souriant, difficile de voir partir un si bon camarade d'équipe :)",
+          "en": "Todo: EN version"
+        },
+        "image": {
+          "url": "/media/testimonials/paul.jpeg",
+          "width": "800",
+          "height": "800"
+        }
+      }
+    ]
   }
 }

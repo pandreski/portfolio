@@ -4,6 +4,7 @@ import Introduction from '@/components/homepage/Introduction';
 import Knowledge from '@/components/homepage/Knowledge';
 import Projects from '@/components/homepage/Projects';
 import Companies from '@/components/homepage/Companies';
+import Testimonials from '@/components/homepage/Testimonials';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Knowledge />
         <Projects />
         <Companies />
+        <Testimonials />
       </main>
     </>
   )
