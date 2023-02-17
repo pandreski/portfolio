@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Open_Sans, DM_Serif_Display } from '@next/font/google'
 import Header from './Header';
+import Footer from './Footer';
 
 const openSans = Open_Sans({
   style: ['normal', 'italic'],
@@ -32,6 +33,7 @@ function Layout({ children }) {
       <div className={`${openSans.variable} ${dmSerifDisplay.variable} font-sans box-border text-deep-gray`}>
         <Header />
         {children}
+        <Footer />
       </div>
     </>
   );
