@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import developerPicture from '@/public/developer.svg';
+import developerPicture from '@/public/media/developer.svg';
 import useSWR from 'swr';
 import { fetcher } from '@/utils/fetcher';
 import { useRouter } from 'next/router';

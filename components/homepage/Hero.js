@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profilePicture from '@/public/profil-pierre-andreski.jpg';
+import profilePicture from '@/public/media/profil-pierre-andreski.jpg';
 import useSWR from 'swr';
 import { fetcher } from '@/utils/fetcher';
 import { useEffect, useState } from 'react';

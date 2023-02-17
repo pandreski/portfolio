@@ -129,5 +129,64 @@
       "fr": "Mes derniers projets",
       "en": "My last projects"
     }
+  },
+  "companies": {
+    "sectionTitle": {
+      "fr": "Les entreprises avec lesquelles j'ai collaboré",
+      "en": "Companies I worked with"
+    },
+    "data": [
+      {
+        "name": "Nvision",
+        "location": "Leudelange, Luxembourg",
+        "duration": {
+          "fr": "Octobre 2020 - Juillet 2022",
+          "en": "October 2020 - July 2022"
+        },
+        "description": {
+          "fr": "Coordinateur technique front-end et Drupal 8/9. Garant de la qualité des livrables et étude des éléments fournis par les équipes UI et UX avant développement des projets. Gestion et coordination des consultants externes.",
+          "en": "Todo : EN version"
+        },
+        "logo": {
+          "url": "/media/companies/logo-nvision.png",
+          "width": "1444",
+          "height": "456"
+        }
+      },
+      {
+        "name": "Vanksen",
+        "location": "Bertrange, Luxembourg",
+        "duration": {
+          "fr": "Juillet 2017 - Septembre 2020",
+          "en": "July 2017 - September 2020"
+        },
+        "description": {
+          "fr": "Réalisation et maintenance de sites internet institutionnels et e-commerce. Veille technique et supervision des équipes créatives dans la mise en place de solutions Wordpress.",
+          "en": "Todo : EN version"
+        },
+        "logo": {
+          "url": "/media/companies/logo-vanksen.svg",
+          "width": "580",
+          "height": "163"
+        }
+      },
+      {
+        "name": "Synchro",
+        "location": "Porcelette, France",
+        "duration": {
+          "fr": "Mai 2014 - Juillet 2017",
+          "en": "May 2014 - July 2017"
+        },
+        "description": {
+          "fr": "Chargé de la réalisation de sites internet WordPress et infogérence du serveur dédié de l'agence.",
+          "en": "Todo : EN version"
+        },
+        "logo": {
+          "url": "/media/companies/logo-synchro.png",
+          "width": "710",
+          "height": "221"
+        }
+      }
+    ]
   }
 }

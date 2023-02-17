@@ -26,7 +26,7 @@ export default function Projects() {
   }, [projectsData]);
 
   return (
-    <div className='container px-5 mx-auto mt-20 md:mt-28'>
+    <section className='container px-5 mx-auto mt-20 md:mt-28'>
       <div className='text-center'>
         {title && <SectionTitle title={title[locale]} />}
       </div>
@@ -39,6 +39,6 @@ export default function Projects() {
           ))
         }
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import logo from '@/public/logo.svg';
+import logo from '@/public/media/logo.svg';
 import Link from 'next/link';
-import frFlag from '@/public/fr.svg';
-import gbFlag from '@/public/gb.svg';
+import frFlag from '@/public/media/fr.svg';
+import gbFlag from '@/public/media/gb.svg';
 import Cta from './Cta';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
