@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 63 225 152;
+    --color-secondary: 0 196 238;
+    --color-deep-green: 7 64 63;
+    --color-deep-gray: 51 51 51;
+    --color-sky-blue: 235 251 250;
+  }
+}

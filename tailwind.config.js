@@ -16,11 +16,11 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      primary: '#3FE198',
-      secondary: '#00C4EE',
-      'deep-gray': '#333',
-      'deep-green': '#07403F',
-      'sky-blue': '#EBFBFA'
+      primary: 'rgb(var(--color-primary) / <alpha-value>)',
+      secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+      'deep-gray': 'rgb(var(--color-deep-gray) / <alpha-value>)',
+      'deep-green': 'rgb(var(--color-deep-green) / <alpha-value>)',
+      'sky-blue': 'rgb(var(--color-sky-blue) / <alpha-value>)'
     },
     extend: {
       screens: {

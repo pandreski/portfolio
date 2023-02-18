@@ -34,7 +34,7 @@ export default function Header() {
     <header className='container mx-auto px-5'>
       <div className='flex justify-between py-5'>
         <Link href='/'>
-          <Image src={logo} alt='Logo' className='w-8 md:w-11' />
+          <Image src={logo} alt='Logo' priority className='w-8 md:w-11' />
         </Link>
         <div className='flex items-center'>
           <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>

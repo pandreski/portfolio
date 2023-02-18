@@ -1,0 +1,17 @@
+.pagination {
+  margin-top: 1.25rem;
+}
+
+.pagination button {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(var(--color-primary));
+  border-radius: 50%;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.pagination button[aria-selected='true'] {
+  background-color: rgb(var(--color-primary));
+}

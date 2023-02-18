@@ -35,7 +35,7 @@ function Hero() {
       <h1 className='sr-only'>{seoTitle ? seoTitle[locale] : ''}</h1>
       {title && <SectionTitle title={title[locale]} />}
       <h3 className='md:text-xl mt-7 md:mt-5'>{subtitle ? subtitle[locale] : ''}</h3>
-      <Image src={profilePicture} alt={imageAlt ? imageAlt[locale] : ''} title='Pierre Andreski' className='rounded-full w-40 md:w-56 mt-10' />
+      <Image src={profilePicture} alt={imageAlt ? imageAlt[locale] : ''} priority title='Pierre Andreski' className='rounded-full w-40 md:w-56 mt-10' />
     </section>
   );
 }

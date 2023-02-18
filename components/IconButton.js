@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { Github, Linkedin } from '@/components/Logos';
+import { Github, Linkedin } from '@/components/Icons';
 
 export default function IconButton({ theme, icon, extraClass, ...other }) {
   const linkStyle = {
