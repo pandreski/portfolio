@@ -8,8 +8,8 @@
       },
       "author": "Pierre Andreski",
       "description": {
-        "fr": "Lorem ipsum",
-        "en": "Dolor sit amet"
+        "fr": "Formation diplômante de \"Développeur concepteur logiciel (JavaScript/React)\" enregistrée au Registre National des Certifications Professionnelles, de niveau 6 (bac +3/4).\nValidation de 14 projets en lien avec le métier de développeur Front-End, axés sur le développement JavaScript/React, la gestion de projet et l’organisation.\nL’intégralité de mes projets est disponible publiquement sur mon repo GitHub.",
+        "en": "Degree in \"Software Developer (JavaScript/React)\" registered in the National Register of Professional Certifications, level 6 (bachelor).\nValidation of 14 projects related to the job of Front-End developer, focused on JavaScript/React development, project management and organization.\nAll my projects are publicly available on my GitHub repository."
       },
       "tags": [
         "JavaScript",
@@ -38,15 +38,15 @@
       },
       "author": "Pierre Andreski",
       "work": {
-        "fr": "",
-        "en": ""
+        "fr": "front-end",
+        "en": "front-end"
       },
       "description": {
         "fr": "",
         "en": ""
       },
       "tags": ["React", "Next JS", "Sass"],
-      "website": "",
+      "website": "https://lappart.de/",
       "cover": "/media/projects/lappart-website.jpg",
       "images": []
     },
@@ -62,15 +62,15 @@
       },
       "author": "Nvision",
       "work": {
-        "fr": "",
-        "en": ""
+        "fr": "front-end",
+        "en": "front-end"
       },
       "description": {
-        "fr": "",
-        "en": ""
+        "fr": "Site internet des supermarchés Cactus au Luxembourg. Site vitrine doté d’un store locator, de pages produits ainsi que d’une section dédiée aux recettes de cuisine.",
+        "en": "Website of Cactus supermarkets in Luxembourg. Showcase site with a store locator, product pages and a section dedicated to cooking recipes."
       },
       "tags": ["Drupal 9", "TypeScript", "Sass", "Swiper JS"],
-      "website": "",
+      "website": "https://www.cactus.lu/",
       "cover": "/media/projects/cactus-website.jpg",
       "images": []
     },
@@ -86,39 +86,39 @@
       },
       "author": "Nvision",
       "work": {
-        "fr": "",
-        "en": ""
+        "fr": "front-end",
+        "en": "front-end"
       },
       "description": {
-        "fr": "",
-        "en": ""
+        "fr": "Site vitrine de la Menuiserie Riche, fabriquant et installateur de portes, fenêtres et portes de garage en Belgique.\nUne section dédiée aux particuliers pour leur présenter les différents matériaux et modèles de fenêtre et de portes d’entrées.\nUne seconde section, dédiée aux architectes permettant de mettre en avant le côté technique sur-mesure de leurs solutions.",
+        "en": "Showcase site of Menuiserie Riche, manufacturer and installer of doors, windows and garage doors in Belgium.\nA dedicated section for private individuals to present the different materials and models of windows and doors.\nA second section, dedicated to architects to highlight the technical side of their custom solutions."
       },
       "tags": ["Drupal 9", "JavaScript", "Sass", "Swiper JS", "Webpack"],
-      "website": "",
+      "website": "https://www.chassisriche.be/",
       "cover": "/media/projects/riche-website.jpg",
       "images": []
     },
     {
       "slug": "luxtrust",
       "title": {
-        "fr": "Luxtrust",
-        "en": "Luxtrust"
+        "fr": "LuxTrust",
+        "en": "LuxTrust"
       },
       "clientName": {
-        "fr": "Luxtrust SA",
-        "en": "Luxtrust SA"
+        "fr": "LuxTrust SA",
+        "en": "LuxTrust SA"
       },
       "author": "Vanksen",
       "work": {
-        "fr": "",
-        "en": ""
+        "fr": "back-end, front-end",
+        "en": "back-end, front-end"
       },
       "description": {
-        "fr": "",
-        "en": ""
+        "fr": "Principal éditeur de solutions d’authentification au Luxembourg. LuxTrust propose des outils à destination des particuliers et des entreprises pour garantir l’accès à leurs comptes bancaires et leurs démarches administratives.\nCe site donne la possibilité de comparer et de souscrire aux différentes solutions disponibles en fonction de son profil.",
+        "en": "Leading provider of authentication solutions in Luxembourg. LuxTrust offers tools for individuals and companies to guarantee access to their bank accounts and administrative procedures.\nThis site gives you the possibility to compare and subscribe to the different solutions available according to your profile."
       },
       "tags": ["Drupal 9", "JavaScript", "Sass", "Swiper JS"],
-      "website": "",
+      "website": "https://www.luxtrust.com/",
       "cover": "/media/projects/luxtrust-website.jpg",
       "images": []
     },
@@ -134,15 +134,15 @@
       },
       "author": "Vanksen",
       "work": {
-        "fr": "",
-        "en": ""
+        "fr": "back-end, front-end",
+        "en": "back-end, front-end"
       },
       "description": {
-        "fr": "",
-        "en": ""
+        "fr": "Site d’information dédié à l’achat à crédit ou en leasing d’automobiles du groupe PSA/Stellantis (Peugeot, Citroën et DS).\nOn peut y trouver des articles de présentation, de la documentation contractuelle ainsi qu’un chat pour contacter un conseiller.",
+        "en": "Informative website dedicated to the purchase on credit or leasing of cars from the PSA/Stellantis group (Peugeot, Citroën and DS).\nYou can find presentation articles, contractual documentation and a chat to contact an advisor."
       },
       "tags": ["Drupal 8", "JavaScript", "jQuery", "Sass", "Gulp"],
-      "website": "",
+      "website": "https://www.psa-finance-france.fr/",
       "cover": "/media/projects/psa-finance-france-website.jpg",
       "images": []
     }

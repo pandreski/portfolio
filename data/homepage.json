@@ -145,7 +145,7 @@
         },
         "description": {
           "fr": "Coordinateur technique front-end et Drupal 8/9. Garant de la qualité des livrables et étude des éléments fournis par les équipes UI et UX avant développement des projets. Gestion et coordination des consultants externes.",
-          "en": "Todo : EN version"
+          "en": "Technical coordinator for front-end and Drupal 8/9. Ensure quality of deliverables and review of elements provided by the UI/UX team before project development. Management and coordination of external consultants."
         },
         "logo": {
           "url": "/media/companies/logo-nvision.svg",
@@ -161,8 +161,8 @@
           "en": "July 2017 - September 2020"
         },
         "description": {
-          "fr": "Réalisation et maintenance de sites internet institutionnels et e-commerce. Veille technique et supervision des équipes créatives dans la mise en place de solutions Wordpress.",
-          "en": "Todo : EN version"
+          "fr": "Réalisation et maintenance de sites internet institutionnels et e-commerce, principalement Drupal 8 (Front-End et Back-End). Veille technique et supervision des équipes créatives dans la mise en place de solutions WordPress.",
+          "en": "Development and maintenance of institutional and e-commerce websites, mainly Drupal 8 (Front-End and Back-End). Technical monitoring and supervision of creative teams in the implementation of WordPress solutions."
         },
         "logo": {
           "url": "/media/companies/logo-vanksen.svg",
@@ -178,8 +178,8 @@
           "en": "May 2014 - July 2017"
         },
         "description": {
-          "fr": "Chargé de la réalisation de sites internet WordPress et infogérence du serveur dédié de l'agence.",
-          "en": "Todo : EN version"
+          "fr": "Développeur principal en charge du pôle de production. Développement WordPress et Drupal (Front-End et Back-End). Accompagnement des clients dans la prise en main de leur outil en fin de projet. Infogérance du serveur dédié de l'agence (DevOps).",
+          "en": "Lead developer in charge of the production pole. WordPress and Drupal development (Front-End and Back-End). Support customers in the handling of their tool at the end of the project. Outsourcing of the agency's dedicated server (DevOps)."
         },
         "logo": {
           "url": "/media/companies/logo-synchro.png",
@@ -206,8 +206,8 @@
           "en": "Full-Stack developer @ LOR N DEV"
         },
         "body": {
-          "fr": "Pierre est un développeur passionné et investi dans son travail. Développeur spécialisé frontend (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) il dispose également d'une maîtrise parfaite des CMS Drupal/WordPress pour la partie backend, CMS sur lesquels nous travaillions ensemble quotidiennement. Humble et souriant, difficile de voir partir un si bon camarade d'équipe :)",
-          "en": "Todo: EN version"
+          "fr": "Pierre est un développeur passionné et investi dans son travail. Développeur spécialisé front-end (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) il dispose également d'une maîtrise parfaite des CMS Drupal/WordPress pour la partie backend, CMS sur lesquels nous travaillions ensemble quotidiennement. Humble et souriant, difficile de voir partir un si bon camarade d'équipe :)",
+          "en": "Pierre is a passionate and invested developer. Specialized front-end developer (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) he also has a perfect mastery of Drupal/WordPress CMS for the backend part, CMS on which we worked together daily. Humble and smiling, it's hard to see such a good teammate leave :)"
         },
         "image": {
           "url": "/media/testimonials/paul.jpeg",
