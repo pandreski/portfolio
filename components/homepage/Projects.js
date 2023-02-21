@@ -5,7 +5,9 @@ import { useRouter } from 'next/router';
 import SectionTitle from '../SectionTitle';
 import ProjectCard from '../ProjectCard';
 import Link from 'next/link';
-import { v4 as uuidv4 } from 'uuid';
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css/core';
+import Controls from '../slider/Controls';
 
 export default function Projects() {
   const { data } = useSWR('/api/homepage/projects', fetcher);
@@ -30,15 +32,33 @@ export default function Projects() {
       <div className='text-center'>
         {title && <SectionTitle title={title[locale]} />}
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8 md:mt-20'>
-        {
-          projects?.map((project) => (
-            <Link href={`/project/${project.slug}`} key={uuidv4()}>
-              <ProjectCard image={project.cover} title={project.title[locale]} />
-            </Link>
-          ))
-        }
-      </div>
+
+      <Splide
+        hasTrack={false}
+        aria-labelledby='companies'
+        options={{
+          mediaQuery: 'min',
+          breakpoints: {
+            768: {
+              destroy: true,
+              arrows: false,
+              pagination: false
+            }
+          }
+        }}
+        className='mt-8 md:mt-20'
+      >
+        <SplideTrack className='slider-grid'>
+          {projects?.map((project) => (
+            <SplideSlide key={project.slug}>
+              <Link href={`/project/${project.slug}`}>
+                <ProjectCard image={project.cover} title={project.title[locale]} />
+              </Link>
+            </SplideSlide>
+          ))}
+        </SplideTrack>
+        <Controls />
+      </Splide>
     </section>
   );
 }

@@ -11,3 +11,9 @@
     --color-sky-blue: 235 251 250;
   }
 }
+
+@layer components {
+  .slider-grid .splide__list {
+    @apply md:!grid md:grid-cols-2 lg:grid-cols-3 md:gap-7;
+  }
+}
