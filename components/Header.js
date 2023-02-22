@@ -51,7 +51,7 @@ export default function Header() {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-10 ${isScrolled ? 'bg-white/80 backdrop-blur-sm' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 z-10 bg-transparent transition-colors duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-sm' : ''}`}>
       <div className='container mx-auto px-5'>
         <div className='flex justify-between py-5'>
           <Link href='/'>
