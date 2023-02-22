@@ -7,6 +7,6 @@ export default function handler(req, res) {
     const fileData = fs.readFileSync(filePath);
     const data = JSON.parse(fileData);
 
-    res.status(200).json(data.data);
+    res.status(200).json(data);
   }
 }

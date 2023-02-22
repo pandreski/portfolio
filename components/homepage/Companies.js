@@ -8,7 +8,7 @@ import Image from 'next/image';
 import illustration from '@/public/media/co-workers.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
-import Controls from '../slider/Controls';
+import Controls from '@/components/slider/Controls';
 
 export default function Companies() {
   const { data } = useSWR('/api/homepage/companies', fetcher);

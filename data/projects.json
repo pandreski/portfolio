@@ -1,10 +1,32 @@
 {
-  "data": [
+  "labels": {
+    "clientName": {
+      "fr": "Client",
+      "en": "Client"
+    },
+    "author": {
+      "fr": "Réalisation",
+      "en": "Made by"
+    },
+    "work": {
+      "fr": "Travaux réalisés",
+      "en": "What I did"
+    },
+    "website": {
+      "fr": "Voir le site",
+      "en": "View website"
+    }
+  },
+  "projects": [
     {
       "slug": "openclassrooms",
       "title": {
         "fr": "Openclassrooms",
         "en": "Openclassrooms"
+      },
+      "metaDesc": {
+        "fr": "Formation Openclassrooms délivrant une certification équivalente à un bac +3 (Bachelor). Spécialisation Front-End JavaScript et React JS : 14 projets évalués.",
+        "en": "Openclassrooms certification equivalent to a Bachelor's degree. Front-End JavaScript and React JS specialization : 14 evaluated projects."
       },
       "author": "Pierre Andreski",
       "description": {
@@ -23,14 +45,26 @@
         "Redux persist"
       ],
       "website": "https://openclassrooms.com/",
-      "cover": "/media/projects/oc-logo.jpg",
-      "images": []
+      "cover": "/media/projects/openclassrooms/oc-logo.jpg",
+      "images": [
+        {
+          "url": "/media/projects/openclassrooms/oc-logo.jpg",
+          "description": {
+            "fr": "Logo Openclassrooms",
+            "en": "Openclassrooms logo"
+          }
+        }
+      ]
     },
     {
       "slug": "lappart",
       "title": {
         "fr": "L'Appart par Pierre Reistroffer",
         "en": "L'Appart by Pierre Reistroffer"
+      },
+      "metaDesc": {
+        "fr": "Site web du salon de coiffure \"L'Appart\" par Pierre Reistroffer à Sarrebruck en Allemagne. Site réalisé en Next JS avec de nombreuses animations CSS et JavaScript.",
+        "en": "Website of the hair salon \"L'Appart\" by Pierre Reistroffer in Saarbrücken, Germany. Website made in Next JS with many CSS and JS animations."
       },
       "clientName": {
         "fr": "Pierre Reistroffer",
@@ -42,19 +76,45 @@
         "en": "front-end"
       },
       "description": {
-        "fr": "",
-        "en": ""
+        "fr": "Site d'une page pour ce salon de coiffure situé en Allemagne. L'accent a été placé autour des photographies et des effets au scroll.\nMultilingue français et allemand.",
+        "en": "Single page website for this hair salon located in Germany. The focus was placed around the photographs and scroll effects.\nMultilingual French and German."
       },
       "tags": ["React", "Next JS", "Sass"],
       "website": "https://lappart.de/",
-      "cover": "/media/projects/lappart-website.jpg",
-      "images": []
+      "cover": "/media/projects/lappart/lappart-website.jpg",
+      "images": [
+        {
+          "url": "/media/projects/lappart/lappart-website.jpg",
+          "description": {
+            "fr": "L'Appart - page d'accueil",
+            "en": "L'Appart - homepage"
+          }
+        },
+        {
+          "url": "/media/projects/lappart/lappart-website-1.jpg",
+          "description": {
+            "fr": "L'Appart - présentation",
+            "en": "L'Appart - presentation"
+          }
+        },
+        {
+          "url": "/media/projects/lappart/lappart-website-2.jpg",
+          "description": {
+            "fr": "L'Appart - galerie et récompenses",
+            "en": "L'Appart - gallery and awards"
+          }
+        }
+      ]
     },
     {
       "slug": "cactus",
       "title": {
         "fr": "Supermarchés Cactus",
         "en": "Cactus supermarkets"
+      },
+      "metaDesc": {
+        "fr": "Site internet des supermarchés Cactus au Luxembourg, un site vitrine réalisé avec Drupal 9. Côté front-end, TypeScript et Sass ont été utilisés.",
+        "en": "Website of the Cactus supermarkets in Luxembourg, a showcase website built with Drupal 9. On the front-end side, TypeScript and Sass were used."
       },
       "clientName": {
         "fr": "Cactus SA",
@@ -71,14 +131,47 @@
       },
       "tags": ["Drupal 9", "TypeScript", "Sass", "Swiper JS"],
       "website": "https://www.cactus.lu/",
-      "cover": "/media/projects/cactus-website.jpg",
-      "images": []
+      "cover": "/media/projects/cactus/cactus-website.jpg",
+      "images": [
+        {
+          "url": "/media/projects/cactus/cactus-website.jpg",
+          "description": {
+            "fr": "Supermarchés Cactus - page d'accueil",
+            "en": "Cactus supermarkets - homepage"
+          }
+        },
+        {
+          "url": "/media/projects/cactus/cactus-website-1.jpg",
+          "description": {
+            "fr": "Supermarchés Cactus - page recette",
+            "en": "Cactus supermarkets - recipe page"
+          }
+        },
+        {
+          "url": "/media/projects/cactus/cactus-website-2.jpg",
+          "description": {
+            "fr": "Supermarchés Cactus - page simple",
+            "en": "Cactus supermarkets - simple page"
+          }
+        },
+        {
+          "url": "/media/projects/cactus/cactus-website-3.jpg",
+          "description": {
+            "fr": "Supermarchés Cactus - page magasin",
+            "en": "Cactus supermarkets - store page"
+          }
+        }
+      ]
     },
     {
       "slug": "menuiserie-riche",
       "title": {
         "fr": "Menuiserie Riche",
         "en": "Riche carpentry"
+      },
+      "metaDesc": {
+        "fr": "Site internet de la Menuiserie Riche, fabriquant de fenêtres en Belgique. Projet Drupal 9 et JavaScript, multinlingue français et néerlandais.",
+        "en": "Website of Menuiserie Riche, window manufacturer in Belgium. Drupal 9 and JavaScript project, multinlingual website in French and Dutch."
       },
       "clientName": {
         "fr": "Menuiserie Riche",
@@ -95,14 +188,40 @@
       },
       "tags": ["Drupal 9", "JavaScript", "Sass", "Swiper JS", "Webpack"],
       "website": "https://www.chassisriche.be/",
-      "cover": "/media/projects/riche-website.jpg",
-      "images": []
+      "cover": "/media/projects/riche/riche-website.jpg",
+      "images": [
+        {
+          "url": "/media/projects/riche/riche-website.jpg",
+          "description": {
+            "fr": "Chassis Riche - page d'accueil",
+            "en": "Chassis Riche - Homepage"
+          }
+        },
+        {
+          "url": "/media/projects/riche/riche-website-1.jpg",
+          "description": {
+            "fr": "Chassis Riche - configurateur",
+            "en": "Chassis Riche - configurator"
+          }
+        },
+        {
+          "url": "/media/projects/riche/riche-website-2.jpg",
+          "description": {
+            "fr": "Chassis Riche - réalisations",
+            "en": "Chassis Riche - showcase"
+          }
+        }
+      ]
     },
     {
       "slug": "luxtrust",
       "title": {
         "fr": "LuxTrust",
         "en": "LuxTrust"
+      },
+      "metaDesc": {
+        "fr": "LuxTrust, un projet Drupal 9 et JavaScript. Editeur de solution d'authentification au Luxembourg pour particuliers et professionnels dans le domaine bancaire.",
+        "en": "LuxTrust, a Drupal 9 and JavaScript project. Authentication solution provider in Luxembourg for individuals and professionals in the banking sector."
       },
       "clientName": {
         "fr": "LuxTrust SA",
@@ -119,14 +238,54 @@
       },
       "tags": ["Drupal 9", "JavaScript", "Sass", "Swiper JS"],
       "website": "https://www.luxtrust.com/",
-      "cover": "/media/projects/luxtrust-website.jpg",
-      "images": []
+      "cover": "/media/projects/luxtrust/luxtrust-website.jpg",
+      "images": [
+        {
+          "url": "/media/projects/luxtrust/luxtrust-website.jpg",
+          "description": {
+            "fr": "LuxTrust - page d'accueil",
+            "en": "LuxTrust - Homepage"
+          }
+        },
+        {
+          "url": "/media/projects/luxtrust/luxtrust-website-1.jpg",
+          "description": {
+            "fr": "LuxTrust - page professionnels",
+            "en": "LuxTrust - professional page"
+          }
+        },
+        {
+          "url": "/media/projects/luxtrust/luxtrust-website-2.jpg",
+          "description": {
+            "fr": "LuxTrust - page produit",
+            "en": "LuxTrust - product page"
+          }
+        },
+        {
+          "url": "/media/projects/luxtrust/luxtrust-website-3.jpg",
+          "description": {
+            "fr": "LuxTrust - page article",
+            "en": "LuxTrust - article page"
+          }
+        },
+        {
+          "url": "/media/projects/luxtrust/luxtrust-website-4.jpg",
+          "description": {
+            "fr": "LuxTrust - page FAQ",
+            "en": "LuxTrust - Q&A page"
+          }
+        }
+      ]
     },
     {
       "slug": "psa-finance-france",
       "title": {
         "fr": "PSA Finance France",
         "en": "PSA Finance France"
+      },
+      "metaDesc": {
+        "fr": "PSA Finance France, projet Drupal 8, JavaScript et jQuery. Site informatif dédié aux particuliers et professionnels ayant souscrit un crédite auto ou un leasing",
+        "en": "PSA Finance France, a Drupal 8, JavaScript and jQuery project. Informative website for individuals and professionals having subscribed to a car credit or a leasing"
       },
       "clientName": {
         "fr": "Groupe PSA",
@@ -143,8 +302,30 @@
       },
       "tags": ["Drupal 8", "JavaScript", "jQuery", "Sass", "Gulp"],
       "website": "https://www.psa-finance-france.fr/",
-      "cover": "/media/projects/psa-finance-france-website.jpg",
-      "images": []
+      "cover": "/media/projects/psa/psa-finance-france-website.jpg",
+      "images": [
+        {
+          "url": "/media/projects/psa/psa-finance-france-website.jpg",
+          "description": {
+            "fr": "PSA Finance France - page d'accueil",
+            "en": "PSA Finance France - Homepage"
+          }
+        },
+        {
+          "url": "/media/projects/psa/psa-finance-france-website-1.jpg",
+          "description": {
+            "fr": "PSA Finance France - financements",
+            "en": "PSA Finance France - financing"
+          }
+        },
+        {
+          "url": "/media/projects/psa/psa-finance-france-website-2.jpg",
+          "description": {
+            "fr": "PSA Finance France - page simple",
+            "en": "PSA Finance France - simple page"
+          }
+        }
+      ]
     }
   ]
 }

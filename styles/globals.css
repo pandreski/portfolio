@@ -16,4 +16,8 @@
   .slider-grid .splide__list {
     @apply md:!grid md:grid-cols-2 lg:grid-cols-3 md:gap-7;
   }
+
+  .top-background {
+    @apply before:absolute before:content-[""] before:bg-sky-blue before:top-0 before:right-1/2 before:h-[320px] before:md:h-[380px] before:lg:h-[410px] before:w-screen before:-z-[1] before:translate-x-36 before:md:translate-x-72 before:lg:translate-x-96;
+  }
 }

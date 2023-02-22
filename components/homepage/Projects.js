@@ -7,7 +7,7 @@ import ProjectCard from '../ProjectCard';
 import Link from 'next/link';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
-import Controls from '../slider/Controls';
+import Controls from '@/components/slider/Controls';
 
 export default function Projects() {
   const { data } = useSWR('/api/homepage/projects', fetcher);
@@ -24,18 +24,18 @@ export default function Projects() {
 
   useEffect(() => {
     if (!projectsData) return;
-    setProjects(projectsData);
+    setProjects(projectsData.projects);
   }, [projectsData]);
 
   return (
     <section className='container px-5 mx-auto mt-20 md:mt-28'>
       <div className='text-center'>
-        {title && <SectionTitle title={title[locale]} />}
+        {title && <SectionTitle id='projects' title={title[locale]} />}
       </div>
 
       <Splide
         hasTrack={false}
-        aria-labelledby='companies'
+        aria-labelledby='projects'
         options={{
           mediaQuery: 'min',
           breakpoints: {
@@ -51,7 +51,7 @@ export default function Projects() {
         <SplideTrack className='slider-grid'>
           {projects?.map((project) => (
             <SplideSlide key={project.slug}>
-              <Link href={`/project/${project.slug}`}>
+              <Link href={`/projects/${project.slug}`}>
                 <ProjectCard image={project.cover} title={project.title[locale]} />
               </Link>
             </SplideSlide>

@@ -9,12 +9,12 @@
     "footer": {
       "banner": {
         "title": {
-          "fr": "Prenons contact",
-          "en": "Let's meet"
+          "fr": "Prenons contact !",
+          "en": "Let's meet!"
         },
         "body": {
           "fr": "Vous souhaitez que l’on collabore ?\nN’hésitez pas à me contacter via LinkedIn !",
-          "en": "TODO: EN version"
+          "en": "You want to collaborate?\nDo not hesitate to contact me via LinkedIn!"
         }
       },
       "credits": {
