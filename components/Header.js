@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import { fetcher } from '@/utils/fetcher';
 import { useEffect, useState } from 'react';
+import * as ga from '@/utils/ga';
 
 export default function Header() {
   const { data } = useSWR('/api/global', fetcher);
@@ -51,6 +52,15 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleViewResume = (e) => {
+    ga.event({
+      action: "view_resume",
+      params : {
+        lang: locale
+      }
+    })
+  }
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-10 bg-transparent transition-colors duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-sm' : ''}`}>
       <div className='container mx-auto px-5'>
@@ -62,7 +72,7 @@ export default function Header() {
             <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
               <Image src={flags[nextLocale]} alt='' title={title[nextLocale]} className='rounded-full w-6' />
             </div>
-            {ctaLabel && <Cta href='/'>{ctaLabel[locale]}</Cta>}
+            {ctaLabel && <Cta href='/' onClick={handleViewResume}>{ctaLabel[locale]}</Cta>}
           </div>
         </div>
       </div>
