@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const { data } = useSWR('/api/global', fetcher);
   const [ctaLabel, setCtaLabel] = useState(null);
+  const [isScrolled, setScroll] = useState(false);
   const router = useRouter();
   const locale = router.locale;
   const { pathname, asPath, query } = router;
@@ -30,17 +31,38 @@ export default function Header() {
     setCtaLabel(data.header.cta);
   }, [data]);
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Update scroll value if the page is loaded and not at the top
+    if ((document.body.getBoundingClientRect()).top !== 0) {
+      setScroll(true);
+    }
+  }, [])
+
+  const handleScroll = (e) => {
+    const offset = (document.body.getBoundingClientRect()).top;
+
+    if (offset !== 0) {
+      setScroll(true);
+    } else {
+      setScroll(false)
+    }
+  }
+
   return (
-    <header className='container mx-auto px-5'>
-      <div className='flex justify-between py-5'>
-        <Link href='/'>
-          <Image src={logo} alt='Logo' priority className='w-8 md:w-11' />
-        </Link>
-        <div className='flex items-center'>
-          <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
-            <Image src={flags[nextLocale]} alt='' title={title[nextLocale]} className='rounded-full w-6' />
+    <header className={`fixed top-0 left-0 right-0 z-10 ${isScrolled ? 'bg-white/80 backdrop-blur-sm' : ''}`}>
+      <div className='container mx-auto px-5'>
+        <div className='flex justify-between py-5'>
+          <Link href='/'>
+            <Image src={logo} alt='Logo' priority className={`max-w-[30px] md:max-w-[42px] ${isScrolled ? '!max-w-[25px]' : ''} transition-[max-width] duration-300`} />
+          </Link>
+          <div className='flex items-center'>
+            <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
+              <Image src={flags[nextLocale]} alt='' title={title[nextLocale]} className='rounded-full w-6' />
+            </div>
+            {ctaLabel && <Cta href='/'>{ctaLabel[locale]}</Cta>}
           </div>
-          {ctaLabel && <Cta href='/'>{ctaLabel[locale]}</Cta>}
         </div>
       </div>
     </header>
