@@ -26,7 +26,7 @@ export default function Footer() {
               <div className='font-serif text-center md:text-left text-2xl lg:text-[26px]'>
                 {footerData.banner.title[locale]}
               </div>
-              <div className='text-center my-5 md:my-0 md:px-6 xl:px-4 xl:w-2/5'>
+              <div className='text-center my-5 md:my-0 md:px-6 xl:px-4 xl:w-2/5 whitespace-pre-line'>
                 {footerData.banner.body[locale]}
               </div>
               <div className='shrink-0 flex justify-center items-center'>

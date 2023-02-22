@@ -57,7 +57,7 @@ export default function Project() {
                     <p className='mt-2'>{labels.work[locale]}: {project.work[locale]}</p>
                   ) : null}
                 </div>
-                <p className='mt-7 lg:mt-10'>{project.description[locale]}</p>
+                <p className='mt-7 lg:mt-10 whitespace-pre-line'>{project.description[locale]}</p>
                 <div className='mt-7 lg:mt-10'>
                   {project.tags?.map((tag) => <Tag key={uuidv4()} label={tag} />)}
                 </div>
