@@ -32,23 +32,24 @@ export default function Header() {
   }, [data]);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    function handleScroll() {
+      const offset = (document.body.getBoundingClientRect()).top;
+
+      if (offset !== 0) {
+        setScroll(true);
+      } else {
+        setScroll(false)
+      }
+    }
 
     // Update scroll value if the page is loaded and not at the top
     if ((document.body.getBoundingClientRect()).top !== 0) {
       setScroll(true);
     }
-  }, [])
 
-  const handleScroll = (e) => {
-    const offset = (document.body.getBoundingClientRect()).top;
-
-    if (offset !== 0) {
-      setScroll(true);
-    } else {
-      setScroll(false)
-    }
-  }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);    
+  }, []);
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-10 bg-transparent transition-colors duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-sm' : ''}`}>
