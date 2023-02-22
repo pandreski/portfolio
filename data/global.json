@@ -21,6 +21,16 @@
         "fr": "Crédits",
         "en": "Credits"
       }
+    },
+    "error": {
+      "title": {
+        "fr": "Page non trouvée",
+        "en": "Page not found"
+      },
+      "buttonLabel": {
+        "fr": "Retour à l'accueil",
+        "en": "Back to home"
+      }
     }
   }
 }
