@@ -33,7 +33,7 @@ function Layout({ children }) {
       <Head>
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${origin}${router.asPath}`} />
-        {origin.length && <meta property="og:image" content={`${origin}/media/${ogImageName[locale]}`} />}
+        <meta property="og:image" content={`${origin}/media/${ogImageName[locale]}`} />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
