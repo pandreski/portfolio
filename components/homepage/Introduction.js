@@ -45,7 +45,7 @@ export default function Introduction() {
   return (
     <section className='bg-sky-blue'>
       <div className='container mx-auto md:w-10/12 lg:w-7/12 px-5 pt-20 pb-44 lg:pt-28 lg:pb-80 text-center relative'>
-        <Image src={developerPicture} alt='' className='absolute left-5 md:left-0 bottom-full md:translate-x-0 translate-y-11 md:translate-y-16 max-w-[235px] md:max-w-[345px]' />
+        <Image src={developerPicture} alt='' priority className='absolute left-5 md:left-0 bottom-full md:translate-x-0 translate-y-11 md:translate-y-16 max-w-[235px] md:max-w-[345px]' />
         {!isLoading && introData ? (
           <>
             <h2 className='font-serif text-deep-green text-2xl md:text-3xl'>{introData.title[locale]}</h2>

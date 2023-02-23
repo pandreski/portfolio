@@ -9,9 +9,9 @@ import SectionTitle from '../SectionTitle';
 function Skeleton() {
   return (
     <div className='container px-5 pt-20 pb-60 md:pt-28 md:pb-64 mx-auto flex flex-col items-center animate-pulse space-y-10'>
-      <div class="h-6 w-60 bg-slate-100 rounded"></div>
-      <div class="h-2 md-h-4 w-60 bg-slate-100 rounded"></div>
-      <div class="rounded-full bg-slate-100 h-40 w-40 md:w-56 md:h-56"></div>
+      <div className="h-6 w-60 bg-slate-100 rounded"></div>
+      <div className="h-2 md-h-4 w-60 bg-slate-100 rounded"></div>
+      <div className="rounded-full bg-slate-100 h-40 w-40 md:w-56 md:h-56"></div>
     </div>
   );
 }

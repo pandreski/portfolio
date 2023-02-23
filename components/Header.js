@@ -70,7 +70,7 @@ export default function Header() {
           </Link>
           <div className='flex items-center'>
             <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
-              <Image src={flags[nextLocale]} alt='' title={title[nextLocale]} className='rounded-full w-6' />
+              <Image src={flags[nextLocale]} alt='' priority title={title[nextLocale]} className='rounded-full w-6' />
             </div>
             {ctaLabel && <Cta href='/' onClick={handleViewResume}>{ctaLabel[locale]}</Cta>}
           </div>
