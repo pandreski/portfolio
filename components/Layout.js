@@ -23,6 +23,7 @@ function Layout({ children }) {
   const nextLocale = locale === 'fr' ? 'en' : 'fr';
   const origin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : '';
   const alternativeUrl = nextLocale !== 'fr' ? `${origin}/${nextLocale}${router.asPath}` : `${origin}${router.asPath}`;
+  const canonical = locale === 'fr' ? `${origin}${router.asPath}` : `${origin}/${locale}${router.asPath}`;
   const ogImageName = {
     fr: "og-image.jpg",
     en: "og-image-en.jpg"
@@ -32,7 +33,7 @@ function Layout({ children }) {
     <>
       <Head>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${origin}${router.asPath}`} />
+        <meta property="og:url" content={canonical} />
         <meta property="og:image" content={`${origin}/media/${ogImageName[locale]}`} />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
