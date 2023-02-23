@@ -16,6 +16,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      slate: colors.slate,
       primary: 'rgb(var(--color-primary) / <alpha-value>)',
       secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
       'deep-gray': 'rgb(var(--color-deep-gray) / <alpha-value>)',
