@@ -17,6 +17,10 @@ export default function Header() {
   const router = useRouter();
   const locale = router.locale;
   const { pathname, asPath, query } = router;
+  const resumeUrl = {
+    fr: '/files/CV_Andreski_Pierre_CA_FR.pdf',
+    en: '/files/CV_Andreski_Pierre_CA_FR.pdf'
+  }
   const flags = {
     fr: frFlag,
     en: gbFlag
@@ -72,7 +76,7 @@ export default function Header() {
             <div className='mr-4 md:mr-8 cursor-pointer' onClick={() => router.push({ pathname, query }, asPath, { locale: nextLocale })}>
               <Image src={flags[nextLocale]} alt='' priority title={title[nextLocale]} className='rounded-full w-6' />
             </div>
-            {ctaLabel && <Cta href='/' onClick={handleViewResume}>{ctaLabel[locale]}</Cta>}
+            {ctaLabel && <Cta href={resumeUrl[locale]} target='_blank' onClick={handleViewResume}>{ctaLabel[locale]}</Cta>}
           </div>
         </div>
       </div>
