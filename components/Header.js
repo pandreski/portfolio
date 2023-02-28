@@ -19,7 +19,7 @@ export default function Header() {
   const { pathname, asPath, query } = router;
   const resumeUrl = {
     fr: '/files/CV_Andreski_Pierre_CA_FR.pdf',
-    en: '/files/CV_Andreski_Pierre_CA_FR.pdf'
+    en: '/files/CV_Andreski_Pierre_CA_EN.pdf'
   }
   const flags = {
     fr: frFlag,
