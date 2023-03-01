@@ -10,6 +10,8 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
 import Controls from '@/components/slider/Controls';
 import PropTypes from 'prop-types';
+import { Parallax } from 'react-scroll-parallax';
+import { useMediaQuery } from 'react-responsive';
 
 function ItemSkeleton({ isHiddenMobile }) {
   const textLine = 'h-3 w-full bg-slate-100 rounded';
@@ -52,6 +54,7 @@ export default function Companies() {
   const [companies, setCompanies] = useState(null);
   const router = useRouter();
   const locale = router.locale ? router.locale : router.defaultLocale;
+  const isLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   useEffect(() => {
     if (!data) return;
@@ -64,7 +67,7 @@ export default function Companies() {
         {!isLoading && companies ? (
           <>
             <div className='text-center'>
-              {companies && <SectionTitle id='companies' title={companies.sectionTitle[locale]} />}
+              <SectionTitle id='companies' title={companies.sectionTitle[locale]} data-aos='fade-up' />
             </div>
             <div className='mt-14 md:mt-20'>
               <Splide
@@ -82,8 +85,8 @@ export default function Companies() {
                 }}
               >
                 <SplideTrack>
-                  {companies?.data.map((company) => (
-                    <SplideSlide key={uuidv4()} className='md:flex items-start md:!mt-12 md:first:!mt-0'>
+                  {companies?.data.map((company, i) => (
+                    <SplideSlide key={uuidv4()} className='md:flex items-start md:!mt-12 md:first:!mt-0' data-aos='fade-up' data-aos-delay={i * 100}>
                       <div className='shrink-0 md:w-3/12 lg:ml-[8.3333%]'>
                         <Image
                           src={company.logo.url}
@@ -110,11 +113,15 @@ export default function Companies() {
           <Skeleton />
         )}
 
-        <Image
-          src={illustration}
-          alt=''
-          className='hidden lg:block absolute top-1/2 left-full -translate-y-1/2 -translate-x-52'
-        />
+        <div className='hidden lg:block absolute top-1/2 left-full -translate-y-1/2 -translate-x-52 w-[514px] h-[434px] -z-[1]'>
+          <Parallax translateX={['0px', '-100px']} disabled={!isLaptop}>
+            <Image
+              src={illustration}
+              alt=''
+              className=''
+            />
+          </Parallax>
+        </div>
       </div>
     </section>
   );
