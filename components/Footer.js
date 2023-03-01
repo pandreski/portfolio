@@ -22,20 +22,25 @@ export default function Footer() {
       {footerData && (
         <footer className='bg-primary'>
           <div className='container mx-auto px-5 pb-10 md:pb-16'>
-            <section className='bg-deep-green text-white md:flex justify-between items-center rounded-lg w-10/12 mx-auto -translate-y-14 md:-translate-y-10 px-4 md:px-12 lg:px-20 py-6 md:py-11'>
-              <div className='font-serif text-center md:text-left text-2xl lg:text-[26px]'>
-                {footerData.banner.title[locale]}
-              </div>
-              <div className='text-center my-5 md:my-0 md:px-6 xl:px-4 xl:w-2/5 whitespace-pre-line'>
-                {footerData.banner.body[locale]}
-              </div>
-              <div className='shrink-0 flex justify-center items-center'>
-                <IconButton
-                  href='https://www.linkedin.com/in/pierreandreski/'
-                  target='_blank'
-                  theme='light'
-                  icon='linkedin'
-                />
+            <section
+              data-aos='fade-up'
+              data-aos-delay='200'
+            >
+              <div className='bg-deep-green text-white md:flex justify-between items-center rounded-lg w-10/12 mx-auto -translate-y-14 md:-translate-y-10 px-4 md:px-12 lg:px-20 py-6 md:py-11'>
+                <div className='font-serif text-center md:text-left text-2xl lg:text-[26px]'>
+                  {footerData.banner.title[locale]}
+                </div>
+                <div className='text-center my-5 md:my-0 md:px-6 xl:px-4 xl:w-2/5 whitespace-pre-line'>
+                  {footerData.banner.body[locale]}
+                </div>
+                <div className='shrink-0 flex justify-center items-center'>
+                  <IconButton
+                    href='https://www.linkedin.com/in/pierreandreski/'
+                    target='_blank'
+                    theme='light'
+                    icon='linkedin'
+                  />
+                </div>
               </div>
             </section>
 
@@ -44,8 +49,9 @@ export default function Footer() {
                 src={logo}
                 alt=''
                 className='mx-auto'
+                data-aos='fade-up'
               />
-              <div className='mt-12'>
+              <div className='mt-12' data-aos='zoom-in' data-aos-delay='400'>
                 <IconButton
                   href='https://www.linkedin.com/in/pierreandreski/'
                   target='_blank'

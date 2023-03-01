@@ -32,9 +32,9 @@ export default function Hero() {
       {!isLoading && heroData ? (
         <section className='container px-5 pt-20 pb-60 md:pt-28 md:pb-64 mx-auto flex flex-col items-center text-center'>
           <h1 className='sr-only'>{heroData.seoTitle[locale]}</h1>
-          <SectionTitle title={heroData.title[locale]} />
-          <h3 className='md:text-xl mt-7 md:mt-5'>{heroData.subtitle[locale]}</h3>
-          <Image src={profilePicture} alt={heroData.imageAlt[locale]} priority title='Pierre Andreski' className='rounded-full w-40 md:w-56 mt-10' />
+          <SectionTitle title={heroData.title[locale]} data-aos='fade' />
+          <h3 className='md:text-xl mt-7 md:mt-5' data-aos='fade' data-aos-delay='200'>{heroData.subtitle[locale]}</h3>
+          <Image src={profilePicture} alt={heroData.imageAlt[locale]} priority title='Pierre Andreski' className='rounded-full w-40 md:w-56 mt-10' data-aos='fade' data-aos-delay='400' />
         </section>
       ) : (
         <Skeleton />

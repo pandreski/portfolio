@@ -4,10 +4,18 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import * as ga from '@/utils/ga';
 import Script from 'next/script';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function App({ Component, pageProps }) {
 
-  const router = useRouter()
+  const router = useRouter();
+
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
 
   useEffect(() => {
     const handleRouteChange = (url) => {

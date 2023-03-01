@@ -53,7 +53,7 @@ export default function Projects() {
     <section className='container px-5 mx-auto mt-20 md:mt-28'>
       <div className='text-center'>
         {!isLoading && title ? (
-          <SectionTitle id='projects' title={title[locale]} />
+          <SectionTitle id='projects' title={title[locale]} data-aos='fade-up' />
         ) : (
           <Skeleton />
         )}
@@ -76,8 +76,8 @@ export default function Projects() {
           className='mt-8 md:mt-20'
         >
           <SplideTrack className='slider-grid'>
-            {projects?.map((project) => (
-              <SplideSlide key={project.slug}>
+            {projects?.map((project, i) => (
+              <SplideSlide key={project.slug} data-aos='fade-up' data-aos-delay={i * 50}>
                 <Link href={`/projects/${project.slug}`}>
                   <ProjectCard image={project.cover} title={project.title[locale]} />
                 </Link>

@@ -49,9 +49,9 @@ export default function Testimonials() {
       <div className='container px-5 mx-auto mt-20 md:mt-28 bg-sky-blue pt-10 pb-32 md:py-24'>
         {!isLoading && testimonials ? (
           <div className='text-center'>
-            <SectionTitle id='testimonials' title={testimonials.sectionTitle[locale]} />
-            <p className='mt-6 md:mt-5'>{testimonials.sectionSubtitle[locale]}</p>
-            <div className='mt-9 md:mx-auto md:w-10/12 lg:w-1/2'>
+            <SectionTitle id='testimonials' title={testimonials.sectionTitle[locale]} data-aos='fade-up' />
+            <p className='mt-6 md:mt-5' data-aos='fade-up' data-aos-delay='200'>{testimonials.sectionSubtitle[locale]}</p>
+            <div className='mt-9 md:mx-auto md:w-10/12 lg:w-1/2' data-aos='fade-up' data-aos-delay='300'>
               <Splide
                 hasTrack={false}
                 aria-labelledby='testimonials'

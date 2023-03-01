@@ -3,6 +3,7 @@ import { Open_Sans, DM_Serif_Display } from '@next/font/google'
 import Header from './Header';
 import Footer from './Footer';
 import { useRouter } from 'next/router';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const openSans = Open_Sans({
   style: ['normal', 'italic'],
@@ -46,11 +47,13 @@ function Layout({ children }) {
         <link rel="alternate" hreflang={nextLocale} href={alternativeUrl} />
       </Head>
 
-      <div className={`${openSans.variable} ${dmSerifDisplay.variable} font-sans box-border text-deep-gray relative scroll-smooth pt-20 md:pt-28`}>
-        <Header />
-        {children}
-        <Footer />
-      </div>
+      <ParallaxProvider>
+        <div className={`${openSans.variable} ${dmSerifDisplay.variable} font-sans box-border text-deep-gray relative scroll-smooth pt-20 md:pt-28`}>
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </ParallaxProvider>
     </>
   );
 }

@@ -45,11 +45,21 @@ export default function Introduction() {
   return (
     <section className='bg-sky-blue'>
       <div className='container mx-auto md:w-10/12 lg:w-7/12 px-5 pt-20 pb-44 lg:pt-28 lg:pb-80 text-center relative'>
-        <Image src={developerPicture} alt='' priority className='absolute left-5 md:left-0 bottom-full md:translate-x-0 translate-y-11 md:translate-y-16 max-w-[235px] md:max-w-[345px]' />
+        <div className='absolute left-5 md:left-0 bottom-full md:translate-x-0 translate-y-11 md:translate-y-16'>
+          <Image
+            src={developerPicture}
+            alt=''
+            priority
+            className='max-w-[235px] md:max-w-[345px]'
+            data-aos='fade-right'
+            data-aos-delay='200'
+            data-aos-offset='250'
+          />
+        </div>
         {!isLoading && introData ? (
           <>
-            <h2 className='font-serif text-deep-green text-2xl md:text-3xl'>{introData.title[locale]}</h2>
-            <p className='mt-8 md:mt-20 whitespace-pre-line'>
+            <h2 className='font-serif text-deep-green text-2xl md:text-3xl' data-aos='fade-up'>{introData.title[locale]}</h2>
+            <p className='mt-8 md:mt-20 whitespace-pre-line' data-aos='fade-up' data-aos-delay='200'>
               {introData.body[locale]}
             </p>
           </>

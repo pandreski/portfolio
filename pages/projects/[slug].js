@@ -74,7 +74,7 @@ export default function Project() {
           
           <div className='flex flex-col md:flex-row-reverse md:justify-end'>
             
-            <div className='md:w-1/2 md:pl-4 lg:pl-[8.3333%] md:mt-10 lg:mt-16'>
+            <div className='md:w-1/2 md:pl-4 lg:pl-[8.3333%] md:mt-10 lg:mt-16' data-aos='fade-left'>
               <h1 id='project-title' className='font-serif text-deep-green text-2xl md:text-3xl'>{project.title[locale]}</h1>
               <div className='mt-7 md:mt-9'>
                 {project.clientName ? (
@@ -93,7 +93,7 @@ export default function Project() {
               </div>
             </div>
 
-            <div className='mt-9 md:mt-0 md:w-1/2 lg:w-5/12'>
+            <div className='mt-9 md:mt-0 md:w-1/2 lg:w-5/12' data-aos='fade-right'>
               <div>
                 <Splide
                   hasTrack={false}
