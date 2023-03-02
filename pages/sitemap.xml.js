@@ -9,11 +9,17 @@ function generateSiteMap(posts) {
      <url>
        <loc>${SITE_BASE_URL}</loc>
      </url>
+     <url>
+       <loc>${SITE_BASE_URL}/en</loc>
+     </url>
      ${posts
        .map(({ slug }) => {
          return `
        <url>
            <loc>${`${SITE_BASE_URL}/projects/${slug}`}</loc>
+       </url>
+       <url>
+           <loc>${`${SITE_BASE_URL}/en/projects/${slug}`}</loc>
        </url>
      `;
        })
