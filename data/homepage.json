@@ -214,6 +214,22 @@
           "width": "96",
           "height": "96"
         }
+      },
+      {
+        "name": "Nathalie Mentior",
+        "role": {
+          "fr": "Responsable aux communications @ Union Etudiante du Québec",
+          "en": "Communication Manager @ Quebec Student Union"
+        },
+        "body": {
+          "fr": "En tant que client, je trouve très appréciable de travailler avec un développeur de cette qualité ! Pierre dispose d’une vision globale des choses, qui comprend aussi bien les enjeux d’un développeur, d’un bon référencement, d’une bonne expérience utilisateur, mais également l’approche du client. Il ne se contente pas d’exécuter. Ses connaissances lui permettent de répondre exactement aux attentes du client et de l’utilisateur final. En plus de ces compétences, il est également un bon pédagogue.",
+          "en": "As a client, I really appreciate working with a developer of this quality! Pierre has a global vision of things, which includes both the challenges of a developer, good SEO, good user experience, but also the client's approach. He doesn't just execute. His knowledge allows him to respond exactly to the expectations of the client and the end user. In addition to these skills, he is also a good pedagogue."
+        },
+        "image": {
+          "url": "/media/testimonials/nathalie.jpeg",
+          "width": "96",
+          "height": "96"
+        }
       }
     ]
   }

@@ -98,6 +98,9 @@ export default function Project() {
                 <Splide
                   hasTrack={false}
                   aria-labelledby='project-title'
+                  options={{
+                    type: 'loop'
+                  }}
                 >
                   <SplideTrack>
                     {project.images.map((image) => (

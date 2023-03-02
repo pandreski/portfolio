@@ -64,6 +64,7 @@ export default function Projects() {
           hasTrack={false}
           aria-labelledby='projects'
           options={{
+            type: 'loop',
             mediaQuery: 'min',
             breakpoints: {
               768: {

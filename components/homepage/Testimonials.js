@@ -55,6 +55,9 @@ export default function Testimonials() {
               <Splide
                 hasTrack={false}
                 aria-labelledby='testimonials'
+                options={{
+                  type: 'loop'
+                }}
               >
                 <SplideTrack>
                   {testimonials.data.map((testimonial) => (
