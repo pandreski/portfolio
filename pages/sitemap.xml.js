@@ -1,4 +1,7 @@
-const SITE_BASE_URL = 'https://p.andre.ski/';
+import path from 'path';
+import fs from 'fs';
+
+const SITE_BASE_URL = 'https://p.andre.ski';
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -24,12 +27,13 @@ function SiteMap() {
 }
 
 export async function getServerSideProps({ res }) {
-  // We make an API call to gather the URLs for our site
-  const request = await fetch('/api/projects');
-  const posts = await request.json();
+  // Fetch projects data from filesystem:
+  const filePath = path.join(process.cwd(), 'data', 'projects.json');
+  const fileData = fs.readFileSync(filePath);
+  const data = JSON.parse(fileData);
 
   // We generate the XML sitemap with the posts data
-  const sitemap = generateSiteMap(posts.projects);
+  const sitemap = generateSiteMap(data.projects);
 
   res.setHeader('Content-Type', 'text/xml');
   // we send the XML to the browser
