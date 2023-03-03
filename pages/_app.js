@@ -33,10 +33,15 @@ export default function App({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} strategy='afterInteractive' />
-      <Script id='axeptio-cookies' strategy='afterInteractive'>
+      <Script id='axeptio-manager' strategy='afterInteractive'>
         {`
           function loadGoogleAnalyticsTag() {
+            var el = document.createElement('script');
+            el.setAttribute('type', 'text/javascript');
+            el.setAttribute('async', true);
+            el.setAttribute('src', '//www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+            document.body.append(el);
+
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
