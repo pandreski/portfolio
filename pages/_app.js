@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 export default function App({ Component, pageProps }) {
 
   const router = useRouter();
+  const locale = router.locale ? router.locale : router.defaultLocale;
 
   useEffect(() => {
     Aos.init({
@@ -33,13 +34,41 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} strategy='afterInteractive' />
-      <Script id='google-analytics' strategy='afterInteractive'>
+      <Script id='axeptio-cookies' strategy='afterInteractive'>
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-            page_path: window.location.pathname,
+          function loadGoogleAnalyticsTag() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          }
+
+          window.axeptioSettings = {
+            clientId: "${process.env.NEXT_PUBLIC_AXEPTIO_ID}",
+            cookiesVersion: "${locale === 'fr' ? process.env.NEXT_PUBLIC_AXEPTIO_PROJECT_FR : process.env.NEXT_PUBLIC_AXEPTIO_PROJECT_EN}",
+          };
+            
+          (function(d, s) {
+            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+            e.async = true; e.src = "//static.axept.io/sdk.js";
+            t.parentNode.insertBefore(e, t);
+          })(document, "script");
+
+          void 0 === window._axcb && (window._axcb = []);
+          window._axcb.push(function (axeptio) {
+            axeptio.on("cookies:complete", function (choices) {
+              if (choices.google_analytics) {
+                loadGoogleAnalyticsTag();
+              }
+            });
+          });
+
+          (_axcb = window._axcb || []).push(function(sdk) {
+            sdk.on('consent:saved', function(choices) { 
+                window.location.reload()
+            });
           });
         `}
       </Script>
