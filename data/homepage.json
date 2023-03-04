@@ -200,17 +200,17 @@
     },
     "data": [
       {
-        "name": "Paul Weinsberg",
+        "name": "Guillaume de Vreese",
         "role": {
-          "fr": "Développeur Full-Stack @ LOR N DEV",
-          "en": "Full-Stack developer @ LOR N DEV"
+          "fr": "Expert Drupal freelance",
+          "en": "Freelance Drupal expert"
         },
         "body": {
-          "fr": "Pierre est un développeur passionné et investi dans son travail. Développeur spécialisé front-end (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) il dispose également d'une maîtrise parfaite des CMS Drupal/WordPress pour la partie backend, CMS sur lesquels nous travaillions ensemble quotidiennement. Humble et souriant, difficile de voir partir un si bon camarade d'équipe :)",
-          "en": "Pierre is a passionate and invested developer. Specialized front-end developer (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) he also has a perfect mastery of Drupal/WordPress CMS for the backend part, CMS on which we worked together daily. Humble and smiling, it's hard to see such a good teammate leave :)"
+          "fr": "J'ai eu le plaisir de collaborer avec Pierre pendant de nombreuses années. Ses compétences techniques et ses capacités d'adaptation font de Pierre un référent front-end solide sur toutes les phases d'un projet, de la prise du besoin à la réalisation. Au-delà, il possède également des qualités humaines exceptionnelles. Il est constamment à l'écoute et toujours disposé à apporter du soutien à ses collaborateurs, avec pédagogie et bienveillance.\nUn vrai plaisir :)",
+          "en": "I've had the pleasure of working with Pierre for many years. His technical skills and his ability to adapt make him a solid front-end referent for all the steps of a project, from the identification of needs to the implementation. Beyond that, he also has exceptional human qualities. He is always ready to listen and to support his collaborators, with pedagogy and kindness.\nA real pleasure :)"
         },
         "image": {
-          "url": "/media/testimonials/paul.jpeg",
+          "url": "/media/testimonials/guillaume.jpeg",
           "width": "96",
           "height": "96"
         }
@@ -227,6 +227,54 @@
         },
         "image": {
           "url": "/media/testimonials/nathalie.jpeg",
+          "width": "96",
+          "height": "96"
+        }
+      },
+      {
+        "name": "Adrien Weiser",
+        "role": {
+          "fr": "Architecte web @ Vanksen",
+          "en": "Web architect @ Vanksen"
+        },
+        "body": {
+          "fr": "Un collègue comme Pierre, j'en ai connu peu. Soucieux de toujours vouloir s'améliorer et de fournir un travail de qualité, il est demandeur de conseils autant sur l'aspect développement qu'organisationnel.\nIl y a déjà six ans, nous nous sommes rencontrés professionnellement et quand je vois sa progression sur ses compétences en développement Web, on peut dire qu'il sait s'adapter face à l'évolution des différentes technologies (Drupal, WordPress, React, NextJs, Gatsby, Sass, ...).\nIl est passionné, souriant et agréable au quotidien. J'espère qu'un jour on pourra se recroiser professionnellement.",
+          "en": "I have not known many colleagues like Pierre. Always wanting to improve and to provide quality work, he is eager to receive advice on both the development and organizational aspects.\nSix years ago, we met professionally and when I see his progression on his web development skills, we can say that he knows how to adapt to the evolution of different technologies (Drupal, WordPress, React, NextJs, Gatsby, Sass, ...).\nHe is passionate, smiling and pleasant every day. I hope that one day we can meet again professionally."
+        },
+        "image": {
+          "url": "/media/testimonials/adrien.jpeg",
+          "width": "96",
+          "height": "96"
+        }
+      },
+      {
+        "name": "Aloys Dillar",
+        "role": {
+          "fr": "Ingénieur support cloud Elite @ Platform.sh",
+          "en": "Elite Cloud Support Engineer @ Platform.sh"
+        },
+        "body": {
+          "fr": "J'ai eu l'honneur de travailler avec Pierre sur d'innombrables projets au fil des années.\nPierre m'a impressionné par sa capacité à comprendre, formuler et exécuter les attentes et les souhaits des clients (généralement au-delà des attentes).\nDerrière les aspects techniques, l'engagement, le dévouement et l'expertise technique sont trois qualités (parmi beaucoup d'autres) que Pierre possède et affiche.\nAlors que nous avons relevé d'innombrables défis ensemble, Pierre a toujours réussi à montrer la voie et à trouver une solution efficace. J'ai hâte que l'on travaille à nouveau ensemble !",
+          "en": "I've had the honour to work with Pierre on countless projects throughout the years.\nPierre impressed me with his ability to understand, formulate and execute customer's expectation and wishes (usually beyond expectation).\nBehind the technical aspects, commitment, dedication and technical expertise are three qualities (out of many more) that Pierre possesses and displays.\nWhilst facing countless challenges together, Pierre always managed to lead the way and find a working solution. I can't wait to work together again!"
+        },
+        "image": {
+          "url": "/media/testimonials/aloys.jpeg",
+          "width": "96",
+          "height": "96"
+        }
+      },
+      {
+        "name": "Paul Weinsberg",
+        "role": {
+          "fr": "Développeur Full-Stack @ LOR N DEV",
+          "en": "Full-Stack developer @ LOR N DEV"
+        },
+        "body": {
+          "fr": "Pierre est un développeur passionné et investi dans son travail. Développeur spécialisé front-end (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) il dispose également d'une maîtrise parfaite des CMS Drupal/WordPress pour la partie backend, CMS sur lesquels nous travaillions ensemble quotidiennement. Humble et souriant, difficile de voir partir un si bon camarade d'équipe :)",
+          "en": "Pierre is a passionate and invested developer. Specialized front-end developer (JavaScript, Sass, Webpack, Gulp, NodeJS etc.) he also has a perfect mastery of Drupal/WordPress CMS for the backend part, CMS on which we worked together daily. Humble and smiling, it's hard to see such a good teammate leave :)"
+        },
+        "image": {
+          "url": "/media/testimonials/paul.jpeg",
           "width": "96",
           "height": "96"
         }

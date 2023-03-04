@@ -69,7 +69,7 @@ export default function Testimonials() {
                         height={testimonial.image.height}
                         className='w-24 h-24 object-cover rounded-full mx-auto'
                       />
-                      <p className='mt-8 leading-7 italic'>{`"${testimonial.body[locale]}"`}</p>
+                      <p className='mt-8 leading-7 italic whitespace-pre-line'>{`"${testimonial.body[locale]}"`}</p>
                       <p className='font-bold mt-6 md:mt-8'>{testimonial.name}</p>
                       <p className='mt-2'>{testimonial.role[locale]}</p>
                     </SplideSlide>
