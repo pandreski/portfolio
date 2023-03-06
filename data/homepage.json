@@ -248,6 +248,22 @@
         }
       },
       {
+        "name": "George Mbella",
+        "role": {
+          "fr": "Développeur front-end senior @ Devoteam",
+          "en": "Senior front-end developer @ Devoteam"
+        },
+        "body": {
+          "fr": "J'ai eu l'occasion de travailler plusieurs mois avec Pierre. Je peux dire qu'il sait résoudre les problèmes, toujours désireux de trouver la meilleure et la plus efficace des fonctionnalités front-end. C'est un bon équipier, toujours prêt à partager son expérience et à apprendre des autres.",
+          "en": "I had the opportunity to work several months with Pierre. I can say that he’s a great problem solver, always eager to find the finest and most efficient to implement front-end features. He’s a good team player, always up to sharing his experience and also learning from others."
+        },
+        "image": {
+          "url": "/media/testimonials/george.jpeg",
+          "width": "96",
+          "height": "96"
+        }
+      },
+      {
         "name": "Aloys Dillar",
         "role": {
           "fr": "Ingénieur support cloud Elite @ Platform.sh",
