@@ -50,6 +50,14 @@ export default function App({ Component, pageProps }) {
             });
           }
 
+          function loadMicrosoftClarity() {
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_MICROSOFT_CLARITY}");
+          }
+
           window.axeptioSettings = {
             clientId: "${process.env.NEXT_PUBLIC_AXEPTIO_ID}",
             cookiesVersion: "${locale === 'fr' ? process.env.NEXT_PUBLIC_AXEPTIO_PROJECT_FR : process.env.NEXT_PUBLIC_AXEPTIO_PROJECT_EN}",
@@ -66,6 +74,9 @@ export default function App({ Component, pageProps }) {
             axeptio.on("cookies:complete", function (choices) {
               if (choices.google_analytics) {
                 loadGoogleAnalyticsTag();
+              }
+              if (choices.clarity) {
+                loadMicrosoftClarity();
               }
             });
           });
